@@ -98,5 +98,18 @@ img{
     width: 20%;
    margin: 20px 20px;
     justify-content: space-between;
-    
+}
+
+@media screen and (max-width: 420px)
+{
+    .card_group
+    {
+        flex-direction: column;
+    }
+    .card_item
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }

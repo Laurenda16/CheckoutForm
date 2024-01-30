@@ -19,19 +19,19 @@
                 </div>
                 <div class="card space icon-relative">
                     <label class="label" for="">Card Number:</label>
-                    <input type="text" class="input" placeholder="Card number" name="card_number">
+                    <input type="text" inputmode="numeric" pattern="[0-9]*" class="input" placeholder="xxxx xxxx xxxx xxxx" name="card_number" required>
                     <i class="fa-solid fa-credit-card"></i>
                 </div>
 
                 <div class="card_group space">
                     <div class="card_item icon-relative" >
                         <label class="label" for="">Expiry date: </label>
-                        <input type="text" class="input" placeholder=" 00 / 00" name="cvc">
+                        <input type="text" class="input" pattern="\d{2}/\d{2}" placeholder=" MM / AA" name="dateExpiration" required>
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
                     <div class="card_item icon-relative">
                         <label class="label" for="">Cvc: </label>
-                        <input type="text" class="input" placeholder=" 000" name="cvc">
+                        <input type="text" class="input" maxlength="3" placeholder=" 000" name="cvc">
                         <i class="fa-solid fa-lock"></i>
                     </div>
                 </div>
