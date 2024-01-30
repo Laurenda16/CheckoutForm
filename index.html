@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payement Checkout Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -11,34 +12,44 @@
             <h2>Payement Gatewaya</h2>
 
             <div class="form">
-                <div class="card">
+                <div class="card space icon-relative">
                     <label class="label" for="">Card Holder:</label>
                     <input type="text" class="input" placeholder="Coding Market" name="card_holder">
+                    <i class="fa-solid fa-user"></i>
                 </div>
-                <div class="card">
+                <div class="card space icon-relative">
                     <label class="label" for="">Card Number:</label>
                     <input type="text" class="input" placeholder="Card number" name="card_number">
+                    <i class="fa-solid fa-credit-card"></i>
                 </div>
 
-                <div class="card_group">
-                    <div class="card_item">
-                        <label class="label" for="">Cvc:</label>
-                        <input type="text" class="date" placeholder=" 00 / 00" name="expiry_date">
+                <div class="card_group space">
+                    <div class="card_item icon-relative" >
+                        <label class="label" for="">Expiry date: </label>
+                        <input type="text" class="input" placeholder=" 00 / 00" name="cvc">
+                        <i class="fa-solid fa-calendar-days"></i>
                     </div>
-                    <div class="card_item">
-                        <label class="label" for="">Expiry date:</label>
-                        <input type="text" class="date" placeholder=" 000" name="cvc">
+                    <div class="card_item icon-relative">
+                        <label class="label" for="">Cvc: </label>
+                        <input type="text" class="input" placeholder=" 000" name="cvc">
+                        <i class="fa-solid fa-lock"></i>
                     </div>
                 </div>
 
                 <div class="btn">
-                    pay
+                   <span> pay</span>
+                </div>
+                <div class="image">
+                    <img src="img/mc.png" alt="">
+                    <img src="img/pp.png" alt="">
+                    <img src="img/vi.png" alt="">
+
                 </div>
 
             </div>
 
         </div>
     </div>
-    
+    <script src="https://kit.fontawesome.com/b0c712edf4.js" crossorigin="anonymous"></script>
 </body>
 </html>
