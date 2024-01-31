@@ -19,14 +19,14 @@
                 </div>
                 <div class="card space icon-relative">
                     <label class="label" for="">Card Number:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" class="input" placeholder="xxxx xxxx xxxx xxxx" name="card_number" required>
+                    <input type="text" class="input" maxlength="" placeholder="Number card" data-mask="0000 0000 0000 0000" name="card_number" required>
                     <i class="fa-solid fa-credit-card"></i>
                 </div>
 
                 <div class="card_group space">
                     <div class="card_item icon-relative" >
                         <label class="label" for="">Expiry date: </label>
-                        <input type="text" class="input" pattern="\d{2}/\d{2}" placeholder=" MM / AA" name="dateExpiration" required>
+                        <input type="text" class="input" data-mask="00 / 00S" placeholder=" MM / AA" name="dateExpiration" required>
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
                     <div class="card_item icon-relative">
@@ -51,5 +51,6 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/b0c712edf4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
