@@ -1,2 +1,2 @@
 # CheckoutForm
-formulaire de payement en html css
+formulaire de payement en html css et js
